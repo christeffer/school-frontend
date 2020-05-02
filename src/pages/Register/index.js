@@ -62,7 +62,7 @@ export default function Student() {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Tab your name"
+            placeholder="Your name"
           />
         </label>
         <label htmlFor="email">
@@ -71,7 +71,7 @@ export default function Student() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Tab your email"
+            placeholder="Your email"
           />
         </label>
         <label htmlFor="password">
@@ -80,7 +80,7 @@ export default function Student() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Tab your password"
+            placeholder="Your password"
           />
         </label>
         <button type="submit">{id ? 'Update Data' : 'Create Account'}</button>
