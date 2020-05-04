@@ -20,18 +20,18 @@ export default function Header() {
 
   return (
     <Nav>
-      <Link to="/">
+      <Link to="/" title="Home">
         <FaHome size={24} />
       </Link>
-      <Link to="/register">
+      <Link to="/register" title="Register">
         <FaUserAlt size={24} />
       </Link>
       {isLoggedIn ? (
-        <Link onClick={handleLogout} to="/login">
+        <Link onClick={handleLogout} to="/login" title="Logout">
           <FaPowerOff size={24} />
         </Link>
       ) : (
-        <Link to="/login">
+        <Link to="/login" title="Login">
           <FaSignInAlt size={24} />
         </Link>
       )}
